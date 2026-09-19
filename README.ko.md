@@ -1,7 +1,6 @@
-> **다국어 공개 안내:** 본 문서는 동일 내용의 한/영 이중 공개 문서입니다. v2.9 2026-09-13 (영문: [README_EN.md](README_EN.md))  
-> **Original Authority Notice:** 본 기술 명세의 법적·공학적 판단 최상위 기준은 한글 원본(`README.ko.md` / `ON_DEVICE_EDGE_SURVIVAL_PAPER.md`)에 귀속되며, 영문본은 보조 참조용으로만 기능한다. (PHILOSOPHY.ko.md is authoritative original)
+> **원본 권위 고지:** 본 기술 명세의 최상위 법적·공학적 권위는 한글 원본(`README.ko.md`)에 있습니다. `README.md`는 보조 영문 참고본입니다. 불일치 시 한글 원본이 우선합니다.
 
-# ON_DEVICE_EDGE_SURVIVAL_PAPER.md — 엣지·온디바이스 단말의 자율 연산 필연성, 인간-AI 시공간 비대칭성 인지 창, 자동차 모듈러 플랫폼 세그먼트 파생 및 물리적 생존 아키텍처 (v2.9 Master)
+# On-Device-Edge-Survival-Paper — 엣지·온디바이스 단말의 자율 연산 필연성, 인간-AI 시공간 비대칭성 인지 창, 자동차 모듈러 플랫폼 세그먼트 파생 및 물리적 생존 아키텍처 (v2.9 Baseline)
 
 > 본 문서는 스마트폰, 개인 컨슈머 단말, 공공기관 행정·안전 인프라, 자율주행 이동체, 무인 로봇, 스마트팩토리 제어기, 특정보안구역 단말, 재난 인프라, 도메인 특화 커스텀 AI 단말 등 개인·공공·기업을 아우르는 범용 엣지 구동체가 중앙집중형 클라우드 연산의 물리적·경제적 한계, 기존 원자력·화력·수력 및 차세대 발전 인프라 과잉 건설에 따른 전력망 부하와 자연환경 섭란, 유무선·위성·양자·메쉬 등 임의의 네트워크 방식(Network Protocol & Transport Layer Agnostic)이 가지는 물리적 전송 지연 한계, 에어갭(Air-Gapped) 망분리 환경, 물리적 반도체 소자의 열역학적 한계 및 AI 과부하 환각 리스크를 완화하고 자체적인 실시간 연산을 수행할 수밖에 없는 구조적 당위성을 다룹니다.  
 > 본 백서는 특정 기업, 공공기관, 개인 브랜드 등 특정 운용 주체나 특정 통신 프로토콜/네트워크 방식에 종속되지 않는 범용 생존 아키텍처를 기반으로 작성되었으며, 완성차 그룹의 공통 모듈러 플랫폼 공유 및 세그먼트 파생 전략 구조를 적용하여 선행기술 원용 범위를 넓히고, 본 문서의 텍스트 저작권에는 CC BY 4.0, 파생되는 기술 청구 및 실시권에는 DPL v1.0(Defensive Patent License v1.0)을 이원화 적용하여 공개하는 방어적 공개(Defensive Publication) 문서입니다.
@@ -77,7 +76,7 @@
 * **백혈구 비동기 무작위 스캔(Stealth Scan)** — 버스 트래픽을 비동기로 무작위 추출하여 무한 루프나 인가되지 않은 이상 패킷 포착 즉시 격리 버퍼로 억류합니다.
 * **트라이스테이트(High-Z) 물리 격리 및 1ms MIPI 스위칭** — 연산 오류나 과부하 발생 시 하드웨어 클럭 사이클(수 ns~수십 ns 스케일) 및 1ms급 스위칭으로 물리 버스 및 투사 레이어를 고임피던스(High-Z) 전환하여 디스플레이 1프레임(16.6ms) 이내에 투명화함으로써 관찰 시야 가림 리스크를 완화합니다.
 * **독립 Safety IP 및 안티탬퍼 물리 무력화** — 물리적 디캡슐레이션 및 칩 분석 공격 감지 시 하드웨어 제어 시퀀스 내(수 μs 수준)에 internal eFuse 과전압 인가 및 Key Zeroization을 실행하여 엣지 기밀, 공공 데이터 및 커스텀 AI 모델 웨이트의 영구 물리 파괴를 지향합니다.
-* **L0 생체모방 구조적 유격/응력 흡수** — L0(물리 하드웨어 계층 — `chiplet-apu-multi-system-survival-architecture` 백서 참조)의 반도체 인터포저, TSV 및 물리 커넥터 접점에 생체모방 구조(따개비 접착 단백질 메커니즘 등)를 원용하여 열팽창 응력 및 유격 오차를 물리적으로 흡수합니다.
+* **L0 생체모방 구조적 유격/응력 흡수** — L0(물리 하드웨어 계층 — `Chiplet-APU-Multi-System-Survival-Architecture` 백서 참조)의 반도체 인터포저, TSV 및 물리 커넥터 접점에 생체모방 구조(따개비 접착 단백질 메커니즘 등)를 원용하여 열팽창 응력 및 유격 오차를 물리적으로 흡수합니다.
 
 ---
 
@@ -102,7 +101,7 @@
 
 ## 7. 실리보호 및 법적 적용 범위 이원화 (Practical Protection & License Separation)
 
-* **원안 우선 원칙:** 본 명세서의 법적·기술적 해석은 한국어 원본(`README.ko.md` / `ON_DEVICE_EDGE_SURVIVAL_PAPER.md`)을 최우선 기준으로 적용하며, 영문본 및 기타 언어 번역본은 참고용으로만 기능한다.
+* **원안 우선 원칙:** 본 명세서의 법적·기술적 해석은 한국어 원본(`README.ko.md`)을 최우선 기준으로 적용하며, 영문본 및 기타 언어 번역본은 참고용으로만 기능한다.
 * **저작권 및 특허 라이선스 이원화 적용:** 본 문서 텍스트 표현물 및 시각 자료의 저작권에는 **CC BY 4.0**이 적용되며, 본 문서에 기술된 기술적 사상, 아키텍처 구조, 파생 특허 방어 및 통상실시권 호환성에는 **DPL v1.0 (Defensive Patent License v1.0)**을 독립하여 이원화 적용한다.
 * **범위 포괄성:** 본 문서에 기술된 조립 방식, TL Bridge 연동, 다층 제어 토폴로지, 자동차 모듈러 플랫폼 공유 원용 세그먼트 파생 구조, 질문 복잡도 연동 가변 연산 지연 제어, 인간-AI 시공간 비대칭성 기반 1~2초 인지 유휴 창 자원 재할당 및 조기 절단 조건, 물리적 실체 불변성(란다우어 법칙 연계), 칩셋·배터리·AI 동시 보전 메커니즘, 임의 네트워크 전송 방식 무관성, 개인·공공·기업 범용 주체 확장성, 사유 유휴 창 동적 제어, 전력망 부하 완화 및 자연환경 보전 연계, 1ms MIPI 스위칭 및 트라이스테이트 격리, 수 μs 안티탬퍼 파괴, 비침습 에러 블랙박스 라우팅, Base/Extended Fusion 이원화를 포함한 모든 상위 개념은 광범위한 선행기술 선점을 위한 원용 범위로 포괄 적용된다.
 * **비의도적 생략 및 예시적 미한정 고지 (Non-Intentional Omission & Non-Exhaustive Disclaimer):** 본 명세서에 인용되거나 열거된 기술 표준, 공지 원리, 법령 및 관련 저장소 목록은 이해를 돕기 위한 예시적 서술이며 전면적·고착적 한정을 의미하지 않습니다. 작성자의 주관적 한계나 인지적 착오로 인해 특정 세부 규격, 관련 산업 표준, 후속 개정안 또는 균등 선행기술의 명시가 누락되거나 누적 생략되었을 수 있으나, 이는 의도적인 은폐나 배척이 아닙니다. 개시된 상위 기술 사상과 연결되는 모든 파생 표준, 개정 규격, 균등 기구 및 공지기술 조합은 본 방어적 공개 백서의 선행기술 포괄 범주에 포함된 것으로 간주합니다.
@@ -113,9 +112,14 @@
 
 ## 8. 출처 및 기록 (Sources & Records)
 
-* **소마모아 생태계 저장소 및 학술 식별자 (Ecosystem Repositories & DOIs)**
-  * 상위 범용 생존 아키텍처 & APU 연산 제어기 (`chiplet-apu-multi-system-survival-architecture`) — GitHub: `deundeuni / chiplet-apu-multi-system-survival-architecture` | CERN Zenodo DOI: `10.5281/zenodo.22374987` (https://doi.org/10.5281/zenodo.22374987)
-  * 상위 아키텍처 전략 명세 (`ARCHITECTURE_STRATEGY.md`) — GitHub: `deundeuni / chiplet-apu-multi-system-survival-architecture` 저장소 내 수록
+* **소마모아 생태계 저장소 및 학술 식별자 (Ecosystem Repositories & DOIs — Title-Kebab-Case Baseline)**
+  * 최상위 범용 생존 아키텍처 마스터 허브 (`Smart-System-Multi-Survival-Architecture`) — GitHub: `deundeuni / smart-system-multi-survival-architecture`
+  * 상위 범용 생존 아키텍처 & APU 연산 제어기 (`Chiplet-APU-Multi-System-Survival-Architecture`) — GitHub: `deundeuni / Chiplet-APU-Multi-System-Survival-Architecture` | CERN Zenodo DOI: `10.5281/zenodo.22374987` (https://doi.org/10.5281/zenodo.22374987)
+  * 생체모방 열역학 회복탄력성 아키텍처 (`Biomimetic-Thermodynamic-Resilience-Architecture`) — GitHub: `deundeuni / Biomimetic-Thermodynamic-Resilience-Architecture`
+  * 해조류 고정형 공생 해양 구조물 (`Seaweed-Anchored-Mutualistic-Marine-Structure`) — GitHub: `deundeuni / Seaweed-Anchored-Mutualistic-Marine-Structure`
+  * 본 백서 전용 독립 저장소 (`On-Device-Edge-Survival-Paper`) — GitHub: `deundeuni / On-Device-Edge-Survival-Paper` | 메인 백서 파일: `README.md` (영문 보조) / `README.ko.md` (한글 원본)
+  * 프레스·절곡기·절단기 근접 안전 백서 저장소 (`Press-Brake-Shear-Edge-Safety-Paper`) — GitHub: `deundeuni / Press-Brake-Shear-Edge-Safety-Paper` | 메인 백서 파일: `README.md` (영문 보조) / `README.ko.md` (한글 원본)
+  * 상위 아키텍처 전략 명세 (`ARCHITECTURE_STRATEGY.md`) — GitHub: `deundeuni / Chiplet-APU-Multi-System-Survival-Architecture` 저장소 내 수록
   * 다국어 비침습 AR HUD 공간 HMI 게이트웨이 (`POLYLINK-HUD`) — GitHub: `deundeuni / POLYLINK-HUD` | CERN Zenodo DOI: `10.5281/zenodo.22726318` (https://doi.org/10.5281/zenodo.22726318)
   * 재난 피난 유도 & 보조 인프라 (`LAST-LIGHT`) — GitHub: `deundeuni / LAST-LIGHT` | CERN Zenodo DOI: `10.5281/zenodo.22373189` (https://doi.org/10.5281/zenodo.22373189)
   * 선행 광학 인지 & 공간 탐색 인프라 (`FIRST-LIGHT`) — GitHub: `deundeuni / FIRST-LIGHT` | CERN Zenodo DOI: `10.5281/zenodo.22683225` (https://doi.org/10.5281/zenodo.22683225)
@@ -131,3 +135,9 @@
   * 문서 저작권 적용: Creative Commons Attribution 4.0 International (CC BY 4.0)
   * 특허 방어 및 실시권 적용: Defensive Patent License v1.0 (DPL v1.0)
   * 기술적 기반 참조 표준: UCIe, CXL, TL-UL 등 모듈러 Interconnect 오픈 표준을 참조한 생존형 확장 규격
+
+---
+
+## 부록 A. 제개정 이력 (Revision History)
+
+* **v2.9 (2026-09-13):** 엣지·온디바이스 자율 연산 필연성, 인간-AI 시공간 비대칭성 인지 창 및 자동차 모듈러 플랫폼 세그먼트 파생 아키텍처 규격 통합 정립 (`v2.9 Baseline`)
