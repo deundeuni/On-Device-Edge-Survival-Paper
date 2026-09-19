@@ -1,7 +1,7 @@
 > **Multilingual Publication Notice:** This document is a dual-language (Korean/English) publication of identical content. v2.9 2026-09-13 (Korean: [README.ko.md](README.ko.md))  
-> **Original Authority Notice:** The ultimate criterion for legal and engineering judgment of this technical specification belongs to the Korean original (`README.ko.md` / `ON_DEVICE_EDGE_SURVIVAL_PAPER.md`), and the English version functions solely as a supporting reference. (PHILOSOPHY.ko.md is authoritative original)
+> **Original Authority Notice:** The ultimate criterion for legal and engineering judgment of this technical specification belongs to the Korean original (`README.ko.md`), and the English version functions solely as a supporting reference. (PHILOSOPHY.ko.md is authoritative original)
 
-# ON_DEVICE_EDGE_SURVIVAL_PAPER.md — Architectural Necessity of Autonomous On-Device/Edge Computation, Human-AI Temporal Asymmetry Cognitive Window, Automotive Modular Platform Segment Derivation, and Physical Survival Architecture (v2.9 Master)
+# On-Device-Edge-Survival-Paper — Architectural Necessity of Autonomous On-Device/Edge Computation, Human-AI Temporal Asymmetry Cognitive Window, Automotive Modular Platform Segment Derivation, and Physical Survival Architecture (v2.9 Baseline)
 
 > This paper addresses the structural necessity for general edge operating entities—encompassing personal consumer devices, public administrative and safety infrastructure, autonomous vehicles, unmanned robots, smart factory controllers, high-security zone terminals, disaster infrastructure, and domain-specific custom AI terminals—to execute real-time local computation. This necessity arises to mitigate the physical and economic limits of centralized cloud computing, grid loads and environmental disruptions caused by overbuilding conventional (nuclear, thermal, hydro) and next-generation power generation infrastructure, physical propagation delay constraints inherent in any transport network protocol (Universal Transport Protocol & Transport Layer Agnostic: wireless, wireline, satellite, quantum, mesh), air-gapped network disconnect environments, thermodynamic constraints of physical semiconductor devices, and AI overload hallucination risks.  
 > This white paper is formulated based on a universal survival architecture independent of specific corporations, public agencies, personal brands, or specific transport protocols/network types. It incorporates the modular platform sharing and segment derivation strategy of automotive groups to expand the scope of prior art invocation. Text copyright is licensed under CC BY 4.0, while derived technical claims and practice rights are independently licensed under DPL v1.0 (Defensive Patent License v1.0) as a defensive publication document.
@@ -75,7 +75,7 @@
 * **Leukocyte Asynchronous Stealth Scan** — Asynchronously scanning bus traffic to detain anomalous packets into isolation buffers.
 * **Tri-State (High-Z) Physical Isolation & 1ms MIPI Switching** — Switching physical buses and display projection layers to high-impedance (High-Z) within hardware clock cycles (nanosecond to tens of nanoseconds scale) and 1ms to clear display within 1 frame (16.6ms).
 * **Independent Safety IP & Anti-Tamper Physical Destruction** — Triggering internal eFuse overvoltage application and Key Zeroization within microsecond (μs) control sequences upon decapsulation attack detection to permanently destroy model weights and confidential data.
-* **L0 Biomimetic Gap/Stress Absorption** — Incorporating biomimetic structures (barnacle adhesive protein mechanisms) at L0 (Physical Hardware Layer — refer to `chiplet-apu-multi-system-survival-architecture` white paper) interfaces to absorb thermal expansion stress and alignment tolerances.
+* **L0 Biomimetic Gap/Stress Absorption** — Incorporating biomimetic structures (barnacle adhesive protein mechanisms) at L0 (Physical Hardware Layer — refer to `Chiplet-APU-Multi-System-Survival-Architecture` white paper) interfaces to absorb thermal expansion stress and alignment tolerances.
 
 ---
 
@@ -98,7 +98,7 @@
 
 ## 7. Practical Protection & License Separation
 
-* **Original Authority Rule:** Korean original (`README.ko.md` / `ON_DEVICE_EDGE_SURVIVAL_PAPER.md`) serves as the authoritative basis; English/translations serve for reference only.
+* **Original Authority Rule:** Korean original (`README.ko.md`) serves as the authoritative basis; English/translations serve for reference only.
 * **License Dual-Application:** Text copyright is licensed under **CC BY 4.0**, while technical concepts, architecture structures, defensive patent claims, and cross-licensing rights are independently licensed under **DPL v1.0**.
 * **Scope Inclusion:** All high-level concepts (TL Bridge, modular platform derivation, cognitive read-time window, early exit, Landauer invariance, 3-resource preservation, protocol agnosticism, 1ms MIPI switching, μs anti-tamper) are broadly embraced as prior art.
 * **Non-Intentional Omission & Non-Exhaustive Disclaimer:** Standards, principles, statutes, and repositories listed are illustrative. Omissions or errors due to subjective limits do not constitute intentional exclusion; all related derivative standards and equivalent combinations are deemed included in prior art scope.
@@ -109,9 +109,14 @@
 
 ## 8. Sources & Records
 
-* **Ecosystem Repositories & DOIs:**
-  - Master Survival Architecture & APU Computational Controller (`chiplet-apu-multi-system-survival-architecture`) — GitHub: `deundeuni / chiplet-apu-multi-system-survival-architecture` | CERN Zenodo DOI: `10.5281/zenodo.22374987` (https://doi.org/10.5281/zenodo.22374987)
-  - Master Architecture Strategy Specification (`ARCHITECTURE_STRATEGY.md`) — Included in `deundeuni / chiplet-apu-multi-system-survival-architecture`
+* **Ecosystem Repositories & DOIs (Title-Kebab-Case Baseline):**
+  - Top-Level Survival Architecture Master Hub (`Smart-System-Multi-Survival-Architecture`) — GitHub: `deundeuni / smart-system-multi-survival-architecture`
+  - High-Level Universal Survival Architecture & APU Computational Controller (`Chiplet-APU-Multi-System-Survival-Architecture`) — GitHub: `deundeuni / Chiplet-APU-Multi-System-Survival-Architecture` | CERN Zenodo DOI: `10.5281/zenodo.22374987` (https://doi.org/10.5281/zenodo.22374987)
+  - Biomimetic Thermodynamic Resilience Architecture (`Biomimetic-Thermodynamic-Resilience-Architecture`) — GitHub: `deundeuni / Biomimetic-Thermodynamic-Resilience-Architecture`
+  - Seaweed-Anchored Mutualistic Marine Structure (`Seaweed-Anchored-Mutualistic-Marine-Structure`) — GitHub: `deundeuni / Seaweed-Anchored-Mutualistic-Marine-Structure`
+  - Dedicated White Paper Repository (`On-Device-Edge-Survival-Paper`) — GitHub: `deundeuni / On-Device-Edge-Survival-Paper` | Main Files: `README.md` (English Auxiliary) / `README.ko.md` (Korean Original)
+  - Press Brake, Shear & Power Press Near-Proximity Safety Paper Repository (`Press-Brake-Shear-Edge-Safety-Paper`) — GitHub: `deundeuni / Press-Brake-Shear-Edge-Safety-Paper` | Main Files: `README.md` (English Auxiliary) / `README.ko.md` (Korean Original)
+  - High-Level Architecture Strategy Specification (`ARCHITECTURE_STRATEGY.md`) — Subscribed within `Chiplet-APU-Multi-System-Survival-Architecture`
   - Multilingual Non-Invasive AR HUD Spatial HMI Gateway (`POLYLINK-HUD`) — GitHub: `deundeuni / POLYLINK-HUD` | CERN Zenodo DOI: `10.5281/zenodo.22726318` (https://doi.org/10.5281/zenodo.22726318)
   - Disaster Evacuation Guidance & Auxiliary Infrastructure (`LAST-LIGHT`) — GitHub: `deundeuni / LAST-LIGHT` | CERN Zenodo DOI: `10.5281/zenodo.22373189` (https://doi.org/10.5281/zenodo.22373189)
   - Advanced Optical Perception & Spatial Exploration Infrastructure (`FIRST-LIGHT`) — GitHub: `deundeuni / FIRST-LIGHT` | CERN Zenodo DOI: `10.5281/zenodo.22683225` (https://doi.org/10.5281/zenodo.22683225)
@@ -127,3 +132,9 @@
   - Document Copyright: Creative Commons Attribution 4.0 International (CC BY 4.0)
   - Patent Defense & Practice License: Defensive Patent License v1.0 (DPL v1.0)
   - Technical Reference Standards: UCIe, CXL, TL-UL modular interconnect standards for survival extensions.
+
+---
+
+## Appendix A. Revision History
+
+* **v2.9 (2026-09-13):** Autonomous On-Device/Edge Computational Necessity, Human-AI Temporal Asymmetry Cognitive Window, and Automotive Modular Platform Segment Derivation Architecture Specification Integrated Baseline (`v2.9 Baseline`)
